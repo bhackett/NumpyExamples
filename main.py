@@ -50,5 +50,17 @@ print(a.ndim)   # 1
 print(b.size)   # 6
 print(a.dtype)  # int32
 print(b.dtype)  # int32
+d = np.array([1.1, 1.2, 1.3])
+print(d.dtype)  # float64
+e = np.array([1, 2], dtype=np.float64)
+print(e)        # [1. 2.]
+print(b.itemsize)  # 4
+print(a.itemsize)  # 4
+print(e.itemsize)  # 8
+print(a.min())     # 1
+print(b.min())     # 1
+print(e.min())     # 1.0
+print(e.max())     # 2.0
+
 
 print("Finished correctly")
